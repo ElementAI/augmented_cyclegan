@@ -1,5 +1,5 @@
 image: images.borgy.elementai.lan/perouz/perouz_repl_gen_augcgan:latest
-command: ["bash", "-c", "CUDA_VISIBLE_DEVICES=0 python augmented_cyclegan/edges2shoes_exp/train.py --dataroot augmented_cyclegan/datasets/receipts/ --name augcgan_model --niter 20000 --checkpoints_dir './checkpoints/receipts_512' --imgSize 512 --batchSize 2"]
+command: ["bash", "-c", "CUDA_VISIBLE_DEVICES=0 python augmented_cyclegan/edges2shoes_exp/train.py --dataroot augmented_cyclegan/datasets/receipts/ --name augcgan_model --niter 25 --checkpoints_dir './checkpoints/receipts_256' --imgSize 256 --batchSize 4"]
 #command: ["bash", "-c", "CUDA_VISIBLE_DEVICES=0 python augmented_cyclegan/edges2shoes_exp/train.py --dataroot augmented_cyclegan/datasets/receipts/ --name augcgan_model --niter 20000 --display_freq 10 --print_freq 10 --checkpoints_dir './checkpoints/chk_receipts'"]
 # command: ["bash", "-c", "jupyter notebook --no-browse --ip=`hostname -I` --port=57242 --NotebookApp.iopub_data_rate_limit=10000000000"]
 # command: ["ls","/eai/project/"]
